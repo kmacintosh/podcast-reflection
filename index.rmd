@@ -64,7 +64,7 @@ With R code you could embed a leaflet map. Tons of leaflet help and examples [he
 library(sf)
 library(leaflet)
 yukon_shapefile <- read_sf("media/yukon.shp")
-leaflet() %>% 
+leaflet(width = 800, height = 800) %>% 
   addProviderTiles("Esri.NatGeoWorldMap") %>% 
   # polygon from shapefile
   addPolygons(data = yukon_shapefile, color = "#F38630", popup = "Some popup text") %>% 
