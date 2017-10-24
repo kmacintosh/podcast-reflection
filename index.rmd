@@ -1,6 +1,5 @@
 ---
-title: "Podcast Reflection"
-author: Katharine MacIntosh
+title: "the sacred place where life"
 output: html_document
 editor_options: 
   chunk_output_type: console
@@ -10,67 +9,47 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE)
 ```
 
-# Heading 1
 
-Text can be **bold** or *italics* and can have [links](https://en.wikipedia.org/wiki/Porcupine_caribou) embedded.
+A podcast reflection by Katharine MacIntosh
 
-## Heading level 2
+<img src="media/caribou.jpg" style="display: block; margin: auto;" />
 
-You can put in images from the web with a url:
+I’ve built an identity around being productive and capable. This is who I know myself to be. Anxiety has been the dominant motivating force driving my access to creativity, excitement, and productivity. Just before the semester started, I encountered a traumatic, life-changing event and wasn’t able to sustain motivation through anxiety any longer. Dealing with the resulting trauma was so energetically taxing that any amount of anxiety led to exhaustion rather than motivation, the opposite reaction to which I was accustomed. In addition, this psychological trauma had a physical manifestation, and I was unwell for the majority of the semester. On top of managing the emotional and physical repercussions of depression, I experienced a loss of identity; I simply could no longer maintain the high level of productivity that I felt defined me.
 
-![wikibou](https://upload.wikimedia.org/wikipedia/commons/f/fd/Caribou.jpg)
+Clearly, taking on an ambitious project under these conditions, I was bound to fail.  However, actually going through the process and watching myself fail and fail and fail, I learned to forgive myself, and dissociate my value from my productivity. This has been another energetically taxing task, but ultimately necessary to maintain my health. My podcast was far from perfect and far from what I had originally envisioned, but the process of creating this podcast was ultimately very closely tied to processing the trauma that resulted from this extremely difficult period.
 
-Or put in local images using a relative path:
-
-![wikibou](media/Caribou.jpg)
-
-### Heading level 3
-
-You can have a bulleted list:
-
-- One
-- Two
-    - a
-    - b
-- Three
-
-Or a numbered list:
-
-1. One
-2. Two
-    1. a
-    2. b
-3. Three
-
-# HTML Code
-
-For certain things you'll need to use HTML. For example, audio could be put in the page by using soundcloud embed code:
-
-<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/206385711&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
-
-Or, if the files are local, with:
-
-<audio src="media/screaming-piha.mp3" controls preload></audio>
-
-You can also use HTML to center an image, Markdown will align them left usually.
-
-<img src="media/Caribou.jpg" style="display: block; margin: auto;" />
-
-# R Code
-
-With R code you could embed a leaflet map. Tons of leaflet help and examples [here](https://rstudio.github.io/leaflet/). See the map tiles you can use [here](http://leaflet-extras.github.io/leaflet-providers/preview/index.html).
+In the future, I will stick to making maps.
 
 ```{r}
+library(tidyverse)
 library(sf)
 library(leaflet)
-yukon_shapefile <- read_sf("media/yukon.shp")
-leaflet(width = 800, height = 800) %>% 
+caribou <- read_sf("media/caribou.gpkg") %>% 
+  mutate(feature = "Porcupine Caribou calving grounds",
+         col = "#F38630")
+gwichin <- read_sf("media/gwichin-territory.gpkg") %>% 
+  mutate(feature = "Gwich'in traditional territory",
+         col = "#69D2E7")
+territory <- rbind(caribou, gwichin)
+pal <- colorFactor(c("#F38630", "#69D2E7"), 
+                    c("Porcupine Caribou calving grounds", 
+                      "Gwich'in traditional territory"))
+leaflet(territory, width = 800, height = 800) %>% 
   addProviderTiles("Esri.NatGeoWorldMap") %>% 
   # polygon from shapefile
-  addPolygons(data = yukon_shapefile, color = "#F38630", popup = "Some popup text") %>% 
+  addPolygons(color = ~pal(feature), stroke = FALSE, fillOpacity = 0.75,
+              label = ~ feature) %>% 
   # add point directly
-   addMarkers(lng = -123.12, lat = 49.24, popup = "Vancover")  
+   addMarkers(lng = -139.827, lat = 67.569, label = "Old Crow") %>% 
+   addLegend("bottomright", pal = pal, values = ~ feature,
+    title = NULL,
+    opacity = 1
+  )
 ```
 
 
 
+
+
+
+Have built an identity around being productive and capable. This is who I know myself to be, having found a tremendous amount of motivation and energy through a certain level of anxiety. My access to creativity and excitement through anxiety is something I was unable to sustain once I encountered a traumatic, life-changing event. Dealing with this trauma was so energetically taxing that any amount of anxiety led to exhaustion rather than motivation. This exhaustion is the opposite reaction to I was accustomed to and, additionally, led to me being physically unwell for virtually the whole of the semester. In addition to managing the emotional and physical repercussions of depression, this led to a loss of identity that was being further exacerbated as I was still involved in managing the situation that resulted from . Clearly, taking on an ambitious project, I was bound to fail, but actually going through the process and watching myself fail and fail and fail, I’ve had to learn to forgive myself, and dissociate my value from my productivity. This has been another energetically taxing task, but ultimately crucial in just maintaining my health. My podcast was far from perfect and far from what my
