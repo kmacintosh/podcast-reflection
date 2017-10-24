@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE)
 ```
 
 
-A podcast reflection by Katharine MacIntosh
+A podcast reflection for LFS 400 by Katharine MacIntosh
 
 <img src="media/caribou.jpg" style="display: block; margin: auto;" />
 
