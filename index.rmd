@@ -34,7 +34,7 @@ territory <- rbind(caribou, gwichin)
 pal <- colorFactor(c("#F38630", "#69D2E7"), 
                     c("Porcupine Caribou calving grounds", 
                       "Gwich'in traditional territory"))
-leaflet(territory, width = 800, height = 800) %>% 
+leaflet(territory, width = 800, height = 600) %>% 
   addProviderTiles("Esri.NatGeoWorldMap") %>% 
   # polygon from shapefile
   addPolygons(color = ~pal(feature), stroke = FALSE, fillOpacity = 0.75,
@@ -47,9 +47,8 @@ leaflet(territory, width = 800, height = 800) %>%
   )
 ```
 
+## References
 
+Caribou photo by the Bering Land Bridge National Preserve and license under Creative Commons. [Original photo on Flickr](https://www.flickr.com/photos/bering_land_bridge/7584241230).
 
-
-
-
-Have built an identity around being productive and capable. This is who I know myself to be, having found a tremendous amount of motivation and energy through a certain level of anxiety. My access to creativity and excitement through anxiety is something I was unable to sustain once I encountered a traumatic, life-changing event. Dealing with this trauma was so energetically taxing that any amount of anxiety led to exhaustion rather than motivation. This exhaustion is the opposite reaction to I was accustomed to and, additionally, led to me being physically unwell for virtually the whole of the semester. In addition to managing the emotional and physical repercussions of depression, this led to a loss of identity that was being further exacerbated as I was still involved in managing the situation that resulted from . Clearly, taking on an ambitious project, I was bound to fail, but actually going through the process and watching myself fail and fail and fail, I’ve had to learn to forgive myself, and dissociate my value from my productivity. This has been another energetically taxing task, but ultimately crucial in just maintaining my health. My podcast was far from perfect and far from what my
+Caribou and Gwich'in map was hand digitized from a [map](http://ourarcticrefuge.org/wp-content/uploads/2012/09/map-small.jpg) available through the [Gwich'in Steering Committee website](http://ourarcticrefuge.org/).
