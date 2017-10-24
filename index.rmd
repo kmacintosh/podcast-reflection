@@ -1,5 +1,5 @@
 ---
-title: "the sacred place where life"
+title: "the sacred place where life begins"
 output: html_document
 editor_options: 
   chunk_output_type: console
@@ -17,6 +17,16 @@ A podcast reflection for LFS 400 by Katharine MacIntosh
 I’ve built an identity around being productive and capable. This is who I know myself to be. Anxiety has been the dominant motivating force driving my access to creativity, excitement, and productivity. Just before the semester started, I encountered a traumatic, life-changing event and wasn’t able to sustain motivation through anxiety any longer. Dealing with the resulting trauma was so energetically taxing that any amount of anxiety led to exhaustion rather than motivation, the opposite reaction to which I was accustomed. In addition, this psychological trauma had a physical manifestation, and I was unwell for the majority of the semester. On top of managing the emotional and physical repercussions of depression, I experienced a loss of identity; I simply could no longer maintain the high level of productivity that I felt defined me.
 
 Clearly, taking on an ambitious project under these conditions, I was bound to fail.  However, actually going through the process and watching myself fail and fail and fail, I learned to forgive myself, and dissociate my value from my productivity. This has been another energetically taxing task, but ultimately necessary to maintain my health. My podcast was far from perfect and far from what I had originally envisioned, but the process of creating this podcast was ultimately very closely tied to processing the trauma that resulted from this extremely difficult period.
+
+## Producing the podcast
+
+For my final podcast, I originally wanted to talk to more people, get more perspectives, include more context, and more of my own perspective. Given more time and resources, I would have invested in all of these things. On the technical side, I would like to have learned more audio production skills. As it stands, I gained a basic knowledge of Adobe Audition, but would like to have had the time to become more proficient.
+
+## What I learned
+
+More than anything, in making this podcast, I learned how important the skills of interviewing are. Knowing how to ask questions in a way that yields high quality responses rich in content is critical to making a good podcast. In addition, I learned a lot about the organizational process required to produce a podcast; having a defined system for file organization and management, including version control, transcription and clip management. Without these supporting skills, the part of the editing process that involves actually extracting and assembling audio clips that sound good together–the part that I have a natural aptitude for–was made far more challenging. Ultimately, what I ended up with was poor quality tape that lacked organization, and I had to sift through it for hours to isolate the best clips.
+
+## What's next
 
 In the future, I will stick to making maps.
 
