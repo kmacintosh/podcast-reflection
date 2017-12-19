@@ -28,7 +28,7 @@ More than anything, in making this podcast, I learned how important the skills o
 
 ## What's next
 
-Something I learned during the class is that ultimately, what I'm most interested in, is the process of translating information into knowledge. Although I love listening to podcasts, over the course of this project I came to the realization that I'm most interested, and most skilled at, communicating through a visual medium rather than an audio medium. For example, this map is a visual product that communicates some of the story elements from the podcast. In particular, it shows the overlap between the Gwich'in and Porcupine Caribou territories and that the Gwich'in never ventured into the calving grounds.
+Something I learned during the class is that ultimately, what I'm most interested in, is the process of translating information into knowledge. Although I love listening to podcasts, over the course of this project I came to the realization that I'm most interested in, and most skilled at, communicating through a visual medium rather than an audio medium. For example, this map is a visual product that communicates some of the story elements from the podcast. In particular, it shows the overlap between the Gwich'in and Porcupine Caribou territories and that the Gwich'in never ventured into the calving grounds. I loved the challenge of having to communicate this verbally, and would feel confident having to exert those skills in the future, but my abilities are definitely more inclined towards the the technical aspects of map making.
 
 ```{r}
 library(tidyverse)
